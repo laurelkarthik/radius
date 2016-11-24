@@ -12,9 +12,11 @@
   };
   firebase.initializeApp(config);
   //const preobj =document.getElementById("email");
-  //const dbrefobj =firebase.database().ref().child('karthik');
+  //const dbrefobj =firebase.database().ref().child('heading');
   //sync object
-  //dbrefobj.on('value',snap => console.log(snap,val()));
+  //dbrefobj.on('value',function(datasnapshot) {
+   // snap => console.log(snap,val()));
+
 
 
 
@@ -24,14 +26,15 @@
 
 function smt()
 {
+  
   var email =document.getElementById("email");
     var email1= email.value;
     var pwd1 =document.getElementById("pwd");
     var pwd2= pwd.value;
-  console.log( pwd2);
+  
  
   var firebaseref=firebase.database().ref();
-  firebaseref.child("email1").set(email1);
-  firebaseref.child("password1").set(pwd2);
+  firebaseref.child("Email").set(email1);
+  firebaseref.child("Password").set(pwd2);
   
 }
