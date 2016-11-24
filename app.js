@@ -2,7 +2,7 @@
 ( function() {
 
 
-  // Initialize Firebase
+  // Initialize Firebase example
  var config = {
     apiKey: "AIzaSyAqlo3qJ-if4BeffG6_DwDJrWr0IaJrbiI",
     authDomain: "radius-cdc32.firebaseapp.com",
