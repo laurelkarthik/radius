@@ -31,10 +31,13 @@ function smt()
     var email1= email.value;
     var pwd1 =document.getElementById("pwd");
     var pwd2= pwd.value;
-  
+  var uname =document.getElementById("name");
+  var username =uname.value;
  
   var firebaseref=firebase.database().ref();
-  firebaseref.child("Email").set(email1);
-  firebaseref.child("Password").set(pwd2);
+  firebaseref.push().set(email1);
+  firebaseref.push().set(pwd2);
+   firebaseref.push().set(username);
+   
   
 }
